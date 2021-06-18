@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:layoutDirection="rtl"
+    android:textDirection="rtl"
+    android:layout_marginTop="70dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.v7.widget.RecyclerView
+        android:visibility="gone"
+        android:id="@+id/recycle_view_offline_saved_survey"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/text_no_saved_list"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="لا يوجد بيانات مسجلة حتي الان"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/progress_upload_data_offline"
+        android:layout_gravity="center"
+        android:layout_width="80dp"
+        android:layout_height="80dp" />
+
+</FrameLayout>

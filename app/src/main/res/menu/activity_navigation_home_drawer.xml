@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/show_saved_data_list"
+            android:icon="@drawable/viewicon"
+            android:title="عرض البيانات المسجله"/>
+        <item
+            android:id="@+id/add_new_survey"
+            android:icon="@drawable/newicon"
+            android:title="المعاينة الميدانية" />
+
+        <item
+            android:id="@+id/nav_change_project"
+            android:icon="@drawable/changeicon"
+            android:title=" تغيير المشروع" />
+        <item
+            android:id="@+id/nav_comment"
+            android:icon="@drawable/commenticon"
+            android:title="التعليقات على المكاتب" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_logout"
+            android:title="تسجيل الخروج" />
+
+    </group>
+
+
+
+</menu>

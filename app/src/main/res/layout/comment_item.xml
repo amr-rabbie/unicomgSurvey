@@ -1,0 +1,122 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginBottom="5dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="7dp"
+    app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="true">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:layoutDirection="rtl"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="460dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9"
+            android:layoutDirection="rtl"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="7dp"
+                    android:text="اسم المكتب: "
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="23dp" />
+
+                <TextView
+                    android:id="@+id/project_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="7dp"
+                    android:text=" مشروع كاتب العدل "
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="20dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="7dp"
+                    android:text="اسم المشروع: "
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="23dp" />
+
+                <TextView
+                    android:id="@+id/g"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="7dp"
+                    android:text=" مشروع كاتب العدل "
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:padding="7dp">
+
+                <ImageView
+                    android:id="@+id/asd"
+
+                    android:layout_width="50dp"
+                    android:src="@drawable/fffffffff"
+                    android:layout_height="40dp" />
+
+
+                <TextView
+                    android:id="@+id/tvRoomNums"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/asd"
+                    android:text="التعليق"
+                    android:textColor="#B92D00"
+                    android:textSize="23dp" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/comment_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="7dp"
+                android:textSize="21dp"
+                android:text="بلتنيب تابلا نبللاابلا ةنيبلانميبلابانىبللااةتبلؤلا ةبلىانبلةلاابلىبلىانمبللااةلنتىلاةللاانمبلىانلا بلةانم"
+                android:textColor="@color/colorSecondaryText" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/commentEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="20dp"
+            android:layout_weight="0.1"
+            android:src="@drawable/checkbox"/>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

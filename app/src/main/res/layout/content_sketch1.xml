@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:layoutDirection="rtl"
+    tools:openDrawer="start">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="-2dp"
+                tools:context=".FormFragments.SketchPlaceFragment">
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerViewSketchPhoto"
+                    android:layout_width="match_parent"
+                    android:layout_height="600dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginEnd="8dp"
+                    android:scrollbars="vertical"
+                    android:src="@drawable/addfile"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.503"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:spanCount="2" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="1dp"
+                    android:layoutDirection="ltr"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintVertical_bias="1.0">
+
+                    <TextView
+                        android:id="@+id/text_next_click"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="0.7"
+                        android:background="@drawable/nexttbtn"
+                        android:drawableLeft="@drawable/kkk"
+                        android:gravity="center_vertical"
+                        android:paddingRight="10dp"
+                        android:text="التالي"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="30sp" />
+
+
+                    <TextView
+                        android:id="@+id/text_back_click"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="0.3"
+                        android:background="@drawable/btnback"
+                        android:drawableEnd="@drawable/jjjj"
+                        android:gravity="center_vertical"
+                        android:paddingRight="10dp"
+                        android:text="الرجوع"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="30sp" />
+
+
+                </LinearLayout>
+            </android.support.constraint.ConstraintLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="80dp"
+            android:gravity="center">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/textView8"
+                android:layout_width="350dp"
+                android:layout_height="65dp"
+                android:fontFamily="Tajawal"
+                android:gravity="center"
+                android:hint="اضف وصف الصوره ثم اختر الصوره"
+                android:inputType="textMultiLine"
+                android:maxLines="4"
+                android:maxLength="100"
+                android:padding="3dp"
+                android:paddingStart="20dp"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="7pt"
+                app:met_errorColor="#ddaa00"
+                app:met_primaryColor="@color/colorAccent" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/ivPicAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:cropToPadding="false"
+                android:layoutDirection="rtl"
+                android:onClick="add_fad"
+                android:padding="100dp"
+                android:src="@drawable/ic_add_white"
+                app:backgroundTint="#216C9F"
+                app:elevation="6dp"
+                app:pressedTranslationZ="12dp">
+
+            </android.support.design.widget.FloatingActionButton>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.v4.widget.DrawerLayout>
+
+
+

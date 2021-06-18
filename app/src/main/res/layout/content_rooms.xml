@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:layoutDirection="rtl"
+    android:textDirection="rtl"
+    android:layout_width="match_parent"
+    android:layout_marginTop="60dp"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--<include-->
+    <!--layout="@layout/app_bar_home"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent" />-->
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp">
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <LinearLayout android:orientation="horizontal"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:background="@color/colorPrimary"
+                android:weightSum="4"
+                android:layout_height="60dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/txtName"
+                    android:textStyle="bold"
+                    android:layout_marginStart="@dimen/margin"
+                    android:text="اسم الغرفة"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:gravity="center|start"
+                    android:textColor="@android:color/white"
+                    android:layout_height="match_parent"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    android:layout_marginStart="@dimen/margin"
+                    android:text="تجهيزات الغرفة"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:gravity="center|start"
+                    android:textColor="@android:color/white"
+                    android:layout_height="match_parent"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/txtLogo"
+                    android:textStyle="bold"
+                    android:layout_marginStart="@dimen/margin"
+                    android:text="العدد"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:gravity="center|start"
+                    android:textColor="@android:color/white"
+                    android:layout_height="match_parent"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/txtLocation"
+                    android:textStyle="bold"
+                    android:layout_marginStart="@dimen/margin"
+                    android:gravity="center|start"
+                    android:text="الأثاث"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white"
+                    android:layout_height="match_parent"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+
+                    android:textStyle="bold"
+                    android:layout_marginStart="@dimen/margin"
+                    android:gravity="center|start"
+                    android:text="حذف او تعديل"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                >
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:id="@+id/recycleView_rooms"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="70dp"
+                    android:visibility="gone"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout_empyt_room"
+                    android:layout_width="360dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="30dp"
+                    android:background="#CF2530"
+                    android:layoutDirection="rtl"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:textSize="18dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="20dp"
+                        android:padding="10dp"
+                        android:text="لا توجد غرف مضافه "
+                        android:textColor="#fff"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/add_room_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="50dp"
+                        android:padding="10dp"
+                        android:text="أضافة غرفة"
+                        android:visibility="gone"
+                        android:textColor="#fff"
+                        android:textSize="18dp" />
+                </LinearLayout>
+
+                <android.support.design.widget.FloatingActionButton
+                    android:layoutDirection="rtl"
+                    android:textDirection="rtl"
+                    android:id="@+id/float_button_add_room"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|end"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="80dp"
+                    android:cropToPadding="false"
+                    android:padding="100dp"
+                    android:src="@drawable/ic_add_white"
+                    app:backgroundTint="#216C9F"
+                    app:elevation="6dp"
+                    app:pressedTranslationZ="12dp">
+
+                </android.support.design.widget.FloatingActionButton>
+
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="1dp"
+            android:layoutDirection="ltr"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" >
+
+            <TextView
+                android:id="@+id/text_next_click"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="0.7"
+                android:background="@drawable/nexttbtn"
+                android:text="التالي"
+                android:paddingRight="10dp"
+                android:drawableLeft="@drawable/kkk"
+                android:gravity="center_vertical"
+                android:textColor="@color/colorWhite"
+                android:textSize="30sp" />
+
+
+            <TextView
+                android:id="@+id/text_back_click"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="0.3"
+                android:background="@drawable/btnback"
+                android:text="الرجوع"
+                android:drawableEnd="@drawable/jjjj"
+                android:gravity="center_vertical"
+                android:paddingRight="10dp"
+                android:textColor="@color/colorWhite"
+                android:textSize="30sp" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
+

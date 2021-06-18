@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_marginTop="60dp"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true"
+    android:layoutDirection="rtl">
+
+    <FrameLayout
+        android:id="@+id/ddd"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/jobs_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="60dp" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="100dp"
+            android:visibility="gone"
+            android:layout_height="100dp"
+            android:layout_gravity="center" />
+        <LinearLayout
+            android:id="@+id/tvEmptyList"
+            android:layout_width="360dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="70dp"
+            android:background="#CF2530"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal"
+            android:textSize="18dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="20dp"
+                android:padding="10dp"
+                android:text="لا توجد وظائف مضافه "
+                android:textColor="#fff"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/add_job_btn"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="50dp"
+                android:padding="10dp"
+                android:text="اضافة وظيفه"
+                android:textColor="#fff"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/add_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="80dp"
+            android:cropToPadding="false"
+            android:onClick="add_fad"
+            android:padding="100dp"
+            android:src="@drawable/ic_add_white"
+            app:backgroundTint="#216C9F"
+            app:elevation="6dp"
+            app:pressedTranslationZ="12dp">
+
+        </android.support.design.widget.FloatingActionButton>
+
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="1dp"
+        android:layoutDirection="ltr"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" >
+
+        <TextView
+            android:id="@+id/text_next_click"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="0.7"
+            android:background="@drawable/nexttbtn"
+            android:text="التالي"
+            android:paddingRight="10dp"
+            android:drawableLeft="@drawable/kkk"
+            android:gravity="center_vertical"
+            android:textColor="@color/colorWhite"
+            android:textSize="30sp" />
+
+
+        <TextView
+            android:id="@+id/text_back_click"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="0.3"
+            android:background="@drawable/btnback"
+            android:text="الرجوع"
+            android:drawableEnd="@drawable/jjjj"
+            android:gravity="center_vertical"
+            android:paddingRight="10dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="30sp" />
+
+
+    </LinearLayout>
+</RelativeLayout>
+
